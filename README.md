@@ -6,10 +6,11 @@ Najbliższe zajęcia wyświetlane na ekranie 16x2 podpiętym do Raspberry Pi (Ti
 ### Tutorial wkrótce
 
 ## Użycie:
+```
 chmod +x installl.sh
 ./install.sh
 python start.py IDENTYFIKATOR HASLO
-
+```
 
 ## Korzysta z:
 https://gist.github.com/DenisFromHR/cc863375a6e19dce359d
