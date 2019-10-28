@@ -1,0 +1,10 @@
+#!/bin/bash 
+### BEGIN INIT INFO
+# Provides:          sendir
+# Required-Start:    $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Short-Description: Execute sendir at service termination ...
+### END INIT INFO
+python /home/pi/agh-wd-plan-pi/start.py IDENT PASS
