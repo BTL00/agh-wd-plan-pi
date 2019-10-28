@@ -53,6 +53,7 @@ while True:
 	
 	
 	mylcd = RPi_I2C_driver.lcd()
+	print current_time_as_number
 	if current_time_as_number < 600:
 		mylcd.backlight(1)
 	else:
@@ -101,6 +102,16 @@ while True:
 			mylcd.lcd_display_string_pos('        ',1,1)
 			mylcd.lcd_display_string_pos('Brak zajec',1,1)
 			mylcd.lcd_display_string_pos('               ',2,1)
-			mylcd.lcd_display_string_pos(td_date,2,6)
-			sleep(56)
+			mylcd.lcd_display_string_pos(current_date,2,6)
+			timer = 0
+			while(timer < 12):
+				today = datetime.datetime.now()
+				current_date = today.strftime('%d-%m-%Y')
+				current_date_as_number = today.strftime('%d%m%Y')
+				current_time = today.strftime('%H:%M')
+				current_time_as_number = today.strftime('%H%M')
+				mylcd.lcd_display_string_pos('     ',2,0)
+				mylcd.lcd_display_string_pos(current_time,2,0)
+				timer = timer + 1
+				sleep(5)
 			pass

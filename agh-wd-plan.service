@@ -1,0 +1,14 @@
+[Unit]
+Description=AGH WD Plan Service
+After=network.target
+
+[Service]
+ExecStart=/home/pi/agh-wd-plan-pi/start.sh
+WorkingDirectory=/home/pi/agh-wd-plan-pi
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
