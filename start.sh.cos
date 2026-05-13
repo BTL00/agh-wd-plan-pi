@@ -7,4 +7,4 @@
 # Default-Stop:
 # Short-Description: Execute sendir at service termination ...
 ### END INIT INFO
-python /home/pi/agh-wd-plan-pi/start.py IDENT PASS
+python3 /home/pi/agh-wd-plan-pi/start.py IDENT PASS

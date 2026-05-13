@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python3
 import sys
 import requests
 import datetime
@@ -16,7 +16,7 @@ while True:
 	pq = PyQuery(data.content)
 	inputs = pq('input')
 	input_arr = {}
-	print inputs.items()
+	print(list(inputs.items()))
 	for input in inputs.items():
 		name = input.attr('name')
 		value = ('' if input.attr('value') is None else input.attr('value'))
@@ -25,7 +25,7 @@ while True:
 	sleep(2)
 	
 	if(len(sys.argv) != 3):
-		print 'Bledna liczba argumentow! Uzycie: python start.py IDENTYFIKATOR HASLO_DO_WD'
+		print('Bledna liczba argumentow! Uzycie: python start.py IDENTYFIKATOR HASLO_DO_WD')
 		exit()
 
 	post_fields = input_arr
@@ -53,8 +53,8 @@ while True:
 	
 	
 	mylcd = RPi_I2C_driver.lcd()
-	print current_time_as_number
-	if current_time_as_number < 600:
+	print(current_time_as_number)
+	if int(current_time_as_number) < 600:
 		mylcd.backlight(1)
 	else:
 		mylcd.backlight(0)

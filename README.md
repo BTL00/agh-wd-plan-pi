@@ -1,7 +1,9 @@
 # agh-wd-plan-pi
-Najbliższe zajęcia wyświetlane na ekranie 16x2 podpiętym do Raspberry Pi (Timetable) / Python 2.7.
 
+> **⚠️ THIS PROJECT NO LONGER WORKS**
+> Wirtualny Dziekanat (WD) at AGH University is no longer in use. The web portal this app depends on has been shut down, so this project cannot function. It is kept here for archival/historical purposes only.
 
+Najbliższe zajęcia wyświetlane na ekranie 16x2 podpiętym do Raspberry Pi (Timetable) / Python 3.
 
 ### Tutorial wkrótce
 
